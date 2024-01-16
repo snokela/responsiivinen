@@ -44,7 +44,9 @@ div#content section {
     width: 80vw;
     display: inherit;
     flex-direction: row;
-    flex-wrap:wrap
+    flex-wrap:wrap;
+    border-right: 1px solid var(--dark-foreground-color);
+    margin: var(--general-padding) 0 var(--general-margin) 0;
 }
 
 div#content aside {
@@ -58,6 +60,15 @@ article {
 article div {
     margin: var(--general-margin);
     border: 1px solid var(--grey-foreground-color);
+}
+
+article h3 {
+    margin: var(--general-margin);
+}
+
+article p {
+    margin: var(--general-margin);
+    line-height: 1.5;
 }
 
 article div img {
