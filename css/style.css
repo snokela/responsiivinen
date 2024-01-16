@@ -20,3 +20,48 @@
 *,*::before,*::after {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var[--accent-color];
+    font-weight: bold;
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+}
+
+div#content {
+    display: inherit;
+}
+
+div#content section {
+    width: 80vw;
+    display: inherit;
+    flex-direction: row;
+    flex-wrap:wrap
+}
+
+div#content aside {
+    width: 20vw; 
+}
+
+article {
+    flex: 33.33%;
+}
+
+article div {
+    margin: var(--general-margin);
+    border: 1px solid var(--grey-foreground-color);
+}
+
+article div img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
